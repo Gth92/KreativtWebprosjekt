@@ -1,0 +1,229 @@
+/*Anikken/Gresa*/
+/*Generell stilsetting av siden, farger, størrelse osv*/
+body {
+  width: 100vh;
+  height: 100vh;
+  margin: 0%;
+  bottom: 0%;
+  background: rgb(25, 252, 255);
+  background: radial-gradient(
+    circle,
+    rgba(25, 252, 255, 1) 0%,
+    rgba(123, 255, 95, 1) 89%,
+    rgba(174, 255, 73, 1) 100%
+  );
+
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  width: 40%;
+  text-align: center;
+}
+
+li,
+a {
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(92, 23, 219);
+  text-decoration: none;
+}
+/*Stilsetter nav-bar*/
+li {
+  padding: 9%;
+  margin: 2%;
+  background-color: rgb(255, 196, 0);
+  border: none;
+  border-radius: 30%;
+  cursor: pointer;
+  transition: 300ms;
+  width: 70%;
+}
+
+/*class-er*/
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  position: absolute;
+  z-index: 1;
+}
+/*Her posisjonerer vi nav-menyen til riktig sted og legger den foran bakgrunnsbildet ved hjelp av z-index*/
+.cta {
+  padding: 1.7%;
+}
+
+/*hover til nav-bar*/
+li:hover {
+  background-color: rgb(176, 38, 180);
+  transition: 500ms;
+}
+/*Stilsetter figurer*/
+.box {
+  width: 20%;
+  height: 30%;
+  text-align: center;
+  margin-top: 15%;
+  
+} 
+.box:hover{
+  transform: scale(1.4);
+  transition: 450ms;
+}
+.linkHeader {
+  font-size: 200%;
+  width: 50%;
+}
+
+.who {
+  position: absolute;
+  width: 25%;
+  top: 24%;
+  left: 35%;
+}
+
+/*id-er*/
+#divBox1 {
+  margin-left: 70%;
+  position: absolute;
+}
+
+#divBox2 {
+  margin-left: 15%;
+  position: absolute;
+}
+
+#wonderWoman {
+  height: 120%;
+  width: 80%;
+  top: 7%;
+  margin-top: 5%;
+  margin-left: -75%;
+  position: absolute;
+}
+
+#joker {
+  height: 99%;
+  right: 15%;
+  top: 25%;
+  position: absolute;
+  margin-left: -55%;
+  width: 65%;
+}
+
+#container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+#heroHeader {
+  font-family: cursive;
+  color: rgb(223, 11, 11);
+  position: absolute;
+  right: 58%;
+  font-size: 250%;
+  top: -45%
+}
+#villainHeader {
+  color: rgba(120, 8, 247, 0.658);
+  font-family: cursive;
+  position: absolute;
+  left: 18%;
+  top: -45%;
+  font-size: 250%;
+}
+#logo{
+  position: absolute;
+  top: 6%;
+  right: 5%;
+  width: 12%;
+
+}
+
+/* Animasjon av planetene */
+.planet {
+  width: 10%;
+  position: absolute;
+  bottom: 50%;
+  top: 80%;
+  opacity: 0;
+  animation-name: planet;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  transform: translate(-30%, -50%);
+}
+
+.earthLego {
+  width: 9.5%;
+  position: absolute;
+  bottom: 50%;
+  top: 80%;
+  opacity: 0;
+  animation-name: legoexplotion;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  transform: translate(-50%, -50%);
+}
+/*Animasjon av eksplosjon */
+.boom {
+  width: 40%;
+  position: absolute;
+  bottom: 50%;
+  top: 65%;
+  right: 45%;
+  animation-name: legoBoom;
+  animation-duration: 2000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-delay: 1500ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+/*keyframes*/
+
+@keyframes planet {
+  0% {
+    opacity: 0;
+    left: 0;
+  }
+  100% {
+    opacity: 1;
+    left: 45%;
+  }
+}
+
+@keyframes legoexplotion {
+  0% {
+    opacity: 0;
+    right: 0;
+  }
+  100% {
+    opacity: 1;
+    right: 45%;
+  }
+}
+
+@keyframes legoBoom {
+  0% {
+    opacity: 0;
+    width: 15%;
+  }
+  30% {
+    opacity: 1;
+    width: 20%;
+  }
+  75% {
+    opacity: 1;
+    width: 14%;
+  }
+  100% {
+    opacity: 0;
+    width: 10%;
+  }
+}

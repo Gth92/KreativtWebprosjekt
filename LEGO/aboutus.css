@@ -1,0 +1,96 @@
+body {
+  margin: 0%;
+  width: 100vh;
+  height: 100vh;
+}
+/*angir størrelse på body*/
+
+/*Posisjonering av bakgrunnsbildet og filtrering*/
+
+ul {
+  width: 40%;
+  text-align: center;
+}
+
+li,
+a {
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(92, 23, 219);
+  text-decoration: none;
+}
+/*Stilsetting av navigeringsmenyen*/
+
+li {
+  padding: 9%;
+  margin: 2%;
+  background-color: rgb(255, 196, 0);
+  border: none;
+  border-radius: 30%;
+  cursor: pointer;
+  transition: 300ms;
+  width: 70%;
+}
+/*Her fortsetter stilsettingen av nav-menyen*/
+
+li:hover {
+  background-color: rgb(176, 38, 180);
+  transition: 500ms;
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  position: absolute;
+  z-index: 1;
+}
+/*posisjonering av nav-menyen */
+.cta {
+  padding: 1.7%;
+}
+/*Over her kodet av Nahom*/
+
+/* Under her er kodet av Kristina */
+#BackgroundImg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  filter: blur(8px);
+}
+
+#aboutUsPicture {
+  position: absolute;
+  top: 23%;
+  left: 6.5%;
+  height: 50.35%;
+  width: 42%;
+}
+/*Posisjonering av bildet som er vedsiden av about us*/
+#aboutUsHeader {
+  position: absolute;
+  top: 7%;
+  left: 43%;
+  font-size: 250%;
+  font-family: cursive;
+  color: rgba(40, 27, 226, 0.733);
+}
+/*Posisjonering og stilsetting av tittel */
+
+#AboutUsBox {
+  position: absolute;
+  left: 50%;
+  top: 23%;
+  height: 50.35%;
+  width: 42%;
+  background-color: rgba(17, 87, 190, 0.678);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/*posisjonering og stilsetting av p-taggen */
+
+#aboutUsText{
+  color: aliceblue;
+  font-size: 130%;
+}

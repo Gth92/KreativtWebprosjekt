@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*Body kodet av Stanislav*/
+body {
+  width: 100vh;
+  height: 100vh;
+  margin: 0%;
+  bottom: 0%;
+  background: linear-gradient(
+    270deg,
+    rgba(231, 7, 43, 1) 0%,
+    rgba(30, 142, 190, 1) 50%,
+    rgba(190, 30, 45, 1) 100%
+  );
+}
+/* Dette setter størrelsen på body taggen*/
+
+/* Her starter koden til Nahom */
+h1 {
+  position: absolute;
+  left: 40%;
+  top: 5%;
+  color: yellow;
+  font-family: cursive;
+  font-size: 300%;
+}
+/* Dette stilsetter overskriften*/
+
+ul {
+  width: 40%;
+  text-align: center;
+}
+
+li,
+a {
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(92, 23, 219);
+  text-decoration: none;
+}
+/*Stilsetting av navigeringsmenyen*/
+li {
+  padding: 9%;
+  margin: 2%;
+  background-color: rgb(255, 196, 0);
+  border: none;
+  border-radius: 30%;
+  cursor: pointer;
+  transition: 300ms;
+  width: 70%;
+}
+
+li:hover {
+  background-color: rgb(176, 38, 180);
+  transition: 500ms;
+}
+/*Liten animasjon av nav-menyen*/
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.cta {
+  padding: 1.7%;
+}
+/*Dette gir rom for skriften i navigeringsmenyene*/
+/*Her stopper koden til Nahom*/
+
+/*Her starter koden til Stanislav*/
+.boxDiv {
+  position: absolute;
+  top: 24%;
+  left: 27%;
+  width: 45%;
+  height: 55%;
+  opacity: 0;
+  transition: 1s;
+  background-color: rgb(226, 17, 17);
+  border: double 10px;
+  border-radius: 20%;
+}
+/* Posisjonering og stilsetting av boksene*/
+
+.titleHeroes {
+  text-align: center;
+  color: yellow;
+  width: 20%;
+  position: absolute;
+  left: 37%;
+  font-size: 200%;
+  font-family: cursive;
+}
+/* Stilsetting av overskriften til boksen*/
+
+.textBoxDiv {
+  text-align: center;
+  height: 40%;
+  width: 87%;
+  margin: 3%;
+}
+
+.heroInBox {
+  width: 13%;
+  height: 25%;
+  margin: 4%;
+}
+/* angir størrelse for tekst og bilde i boks */
+/*Her stopper koden til Stanislav*/
+
+/*superhero:hover kodet av Nahom*/
+.superhero:hover {
+  transform: scale(1.3);
+  transition: 1s;
+}
+/* hover effekt på bilder*/
+
+/*Her starter koden til Stanislav*/
+.ratings {
+  position: absolute;
+  top: 7%;
+  right: 16%;
+}
+/*Rating med på boksene*/
+
+.star {
+  position: absolute;
+  top: 18%;
+  right: 14%;
+  color: yellow;
+}
+/*Her stopper koden til Stanislav*/
+
+/*Her starter koden til Nahom*/
+#imageSuperman {
+  position: absolute;
+  width: 12%;
+  height: 26%;
+  position: absolute;
+  left: 4%;
+  top: 10%;
+}
+
+
+#imageBatman {
+  width: 15%;
+  height: 27%;
+  position: absolute;
+  right: 5%;
+  top: 7%;
+}
+
+#imageWonderWoman {
+  width: 12%;
+  height: 33%;
+  position: absolute;
+  left: 4%;
+  top: 60%;
+}
+
+#imageIronman {
+  width: 13%;
+  height: 34%;
+  position: absolute;
+  right: 4%;
+  top: 60%;
+}
+/* posisjonering av superhelt bildene*/
+/*Her stopper koden til Nahom*/
+
+
+/*Resten er kodet av Stanislav og Nahom*/
+#imageFlyingSuperman {
+  position: absolute;
+  top: 25%;
+  left: 38%;
+  opacity: 0;
+}
+#imageSuperman:hover + #imageFlyingSuperman {
+  animation-name: FlySuperman;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* usynligjør og animerer flyvende superman  */
+
+#imageWonderWoman:hover ~ #boxWonderwoman,
+#imageSuperman:hover ~ #boxSuperman,
+#imageBatman:hover ~ #boxBatman,
+#imageIronman:hover ~ #boxIronman {
+  opacity: 0.88;
+  transition: 1.7s;
+}
+/* Dette er animasjonene*/
+@keyframes FlySuperman {
+  0% {
+    opacity: 0.6;
+    left: 38%;
+    top: 25%;
+  }
+  25% {
+    opacity: 1;
+    left: 21%;
+    top: 5%;
+  }
+  50% {
+    opacity: 1;
+    left: 15%;
+    top: 77%;
+    transform: rotate(90deg);
+  }
+
+  65% {
+    opacity: 1;
+    left: 70%;
+    top: 60%;
+  }
+  85% {
+    opacity: 1;
+    left: 70%;
+    top: 10%;
+  }
+  100% {
+    opacity: 0, 7;
+    left: 38%;
+    top: 25%;
+  }
+}
+

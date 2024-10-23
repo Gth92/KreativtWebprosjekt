@@ -1,0 +1,130 @@
+body {
+  margin: 0%;
+  width: 100vh;
+  height: 100vh;
+}
+/*angir størrelse på body*/
+
+
+ul {
+  width: 40%;
+  text-align: center;
+}
+
+li,
+a {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 100%;;
+  color: rgb(92, 23, 219);
+  text-decoration: none;
+}
+/*Stilsetting av navigeringsmenyen*/
+
+li {
+  padding: 9%;
+  margin: 2%;
+  background-color: rgb(255, 196, 0);
+  border: none;
+  border-radius: 30%;
+  cursor: pointer;
+  transition: 300ms;
+  width: 70%;
+}
+/*Her fortsetter stilsettingen av nav-menyen*/
+
+li:hover {
+  background-color: rgb(176, 38, 180);
+  transition: 500ms;
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  position: absolute;
+  z-index: 1;
+}
+/*posisjonering av nav-menyen */
+
+.cta {
+  padding: 1.7%;
+}
+/*Over her kodet av Nahom*/
+
+/* Under her er kodet av Kristina */
+#BackgroundImg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  filter: blur(8px);
+}
+/*Posisjonering av bakgrunnsbildet og filtrering*/
+
+#contactPicture {
+  position: absolute;
+  top: 23%;
+  left: 6.5%;
+  height: 50.35%;
+  width: 42%;
+}
+/*Posisjonering av bildet som er vedsiden av contact us*/
+
+#contactHeader {
+  position: absolute;
+  top: 7%;
+  left: 43%;
+  font-size: 250%;
+  font-family: cursive;
+  color: rgba(40, 27, 226, 0.733);
+}
+/*Posisjonering og stilsetting av tittel */
+
+#contactBox {
+  position: absolute;
+  left: 50%;
+  top: 23%;
+  height: 50.35%;
+  width: 42%;
+  background-color: rgb(17, 87, 190, 0.678);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/*posisjonering og stilsetting av tekstholderene */
+
+.field {
+  position: absolute;
+  height: 7%;
+  left: 2%;
+  border-radius: 6%;
+  width: 93%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#name {
+    top: 4%;
+}
+
+#email {
+  top: 16%;
+}
+#phone {
+  top: 28%;
+}
+#message {
+  top: 40%;
+  height: 40%;
+}
+#sendButton {
+top: 85%;
+background-color: rgba(15, 223, 15, 0.747);
+border-radius: 20px;
+}
+#sendButton:hover {
+  opacity: 0.6;
+}
+/*posisjonering og stilsetting av tekstholderne/
